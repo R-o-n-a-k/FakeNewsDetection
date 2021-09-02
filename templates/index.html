@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Fake News Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type=text/css href="{{url_for('static',filename='css/indexstyle.css')}}">
+  <link rel=" icon" href="static/images/fake.png">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d2747108de.js" crossorigin="anonymous"></script>
+  <script>
+    function myFunction() {
+      document.getElementById("GFG").submit();
+    }
+  </script>
+</head>
+
+<body style="background-image: url('../static/images/newspaper.jpg');">
+  <div class="intro">
+    <div class="module">
+      <!-- intro -->
+      <header>
+        <a href="index.html"><img class="logo" src="static/images/fake.png" alt="logo"></a>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="#link1">Verify</a></li>
+            <li><a href="#link2">Goal</a></li>
+            <li><a href="#link3">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <p class="heading1">Fake News: The New Nuclear Element,</p>
+      <p class="content1"> Claming more lives at ground zero.<br><br><br>Misinformation can influence users,
+        manipulating them for political or economic reasons.
+        Once you’ve spotted a suspicious piece of content, use this website to verify wether it is true or not.
+        Fake news and rumors thrive online because few verify what's real and always bias towards content that
+        reinforces their
+        own biases.
+      </p>
+      <p><a href="#link2" class="tag1">Tell Me More <i class="arrow fas fa-arrow-down"></i></a></p>
+      <img src="static/images/mid1.jpg" class="middle1">
+    </div>
+  </div>
+
+  <div class="search" id="link1">
+    <div class="module">
+      <!-- search -->
+      <p class="heading2">See the truth in black and white. </p>
+      <p class="heading3">Search:</p>
+      <div class="wrapper">
+        <form id="form1" action="{{url_for('predicted')}}" method="POST">
+          <div class="group">
+            <textarea type="text" placeholder="Paste text here..." name="news" autocomplete="off"></textarea><span
+              class="highlight"></span><span class="bar"></span>
+          </div>
+          <button type="submit" class="two-btn predict">Predict</button>
+          <button class="two-btn result">Clear</button>
+          <!-- <a href="javascript:$('#form1').submit();" class="two-btn predict">
+            Predict</a>
+          <a href="#" type="submit" class="two-btn reset"> clear</a> -->
+          <br>
+          {{prediction_text}}
+        </form>
+
+      </div>
+      <img src="static/images/mid3.jpg" class="middle3">
+
+    </div>
+
+  </div>
+
+  <div class="goal" id="link2">
+    <div class="module">
+      <!-- goal -->
+      <h2>How We Do It</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="static/images/question-mark.png">
+          <p class="hcontent2">What is fake news?</p>
+          <p class="content2">“Fake news” is a term used to refer to fabricated news. Fake news is an invention – a lie
+            created out of nothing – that takes the appearance of real news with the aim of deceiving people. This is
+            what is important to remember: the information is false, but it seems true.</p>
+        </div>
+        <div class="grid-item">
+          <img src="static/images/dart.png">
+          <p class="hcontent2">Our goal</p>
+          <p class="content2">To assist mitigate the negative effects caused by fake news, we propose to use the
+            technological advancements in ML and AI to fabricate an algorithm to detect the truth.</p>
+        </div>
+        <div class="grid-item">
+          <img src="static/images/gears.png">
+          <p class="hcontent2">Process</p>
+          <p class="content2">The prediction is done by recognizing what kind of source the news has been available
+            from, the quality of text and language, and grammatical errors if any in the news snippet using Deep
+            Learnng.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="module">
+      <!-- contact -->
+      <h1 class="contact-us" id="link3">Contact Us</h1>
+      <div class="shift">
+        <div class="wrapper">
+          <form>
+            <div class="group">
+              <input type="text" placeholder="Email-Id" autocomplete="off" /><span class="highlight"></span><span
+                class="bar"></span>
+            </div>
+          </form>
+        </div>
+
+        <div class="wrapper">
+          <form>
+            <div class="group">
+              <textarea type="text" placeholder="Content" autocomplete="off"></textarea><span
+                class="highlight"></span><span class="bar"></span>
+            </div>
+          </form>
+        </div>
+        <img src="static/images/mid2.jpg" class="middle2">
+        <img src="static/images/mid4.jpg" class="middle4">
+        <a href="#" class="two-btn send"> Send</a>
+      </div>
+
+
+      <div class="social">
+        <a href="https://www.facebook.com"><i id="fab" class="social-icon fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com"><i id="twitter" class="social-icon fab fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com"><i id="insta" class="social-icon fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

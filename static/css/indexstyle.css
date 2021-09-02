@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background-image: url("../images/newspaper.jpg"); */
+  font-family: "Playfair Display", serif;
+  background-size: cover;
+  letter-spacing: 0.5px;
+}
+
+.intro {
+  height: 650px;
+  width: 1000px;
+  background-color: black;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+}
+.module {
+  margin: 10px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 50%;
+}
+
+/* header code */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+li,
+a {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.nav__links li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav__links li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+/* header code end */
+
+.heading1 {
+  font-weight: bold;
+  margin: 20px;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 3px 3px #ec1616;
+  letter-spacing: 2px;
+}
+
+.content1 {
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 100px;
+  font-size: 20px;
+  color: #ececec;
+}
+
+.tag1 {
+  margin-left: 350px;
+  color: #fff;
+}
+
+.arrow {
+  font-size: 25px;
+  color: red;
+}
+.arrow:hover {
+  transition: all 0.3s linear;
+  transform: translateY(5px);
+  color: #fff;
+}
+
+.middle1 {
+  height: 400 px;
+  width: 400px;
+  position: absolute;
+  top: 450px;
+  left: 800px;
+  box-shadow: 15px 15px 5px #ccc;
+}
+
+.search {
+  height: 550px;
+  width: 900px;
+  background-color: white;
+  margin-left: 400px;
+  margin-top: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+
+.heading2 {
+  margin-top: 0px;
+  margin-left: 200px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.heading3 {
+  margin-left: 200px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+/* search bar */
+form {
+  width: 350px;
+  margin: 45px auto;
+  margin-left: 200px;
+}
+
+.group {
+  position: relative;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  background: none;
+  color: #838383;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+}
+::placeholder {
+  color: #c6c6c6;
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 320px;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+.bar:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #0779e4;
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+/* search bar end */
+
+.middle3 {
+  height: 550px;
+  width: 400px;
+  position: absolute;
+  top: 60px;
+  left: -250px;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.goal {
+  height: 550px;
+  width: 1000px;
+  background-color: black;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+h2 {
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 370px;
+}
+
+/* grid */
+.grid-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 300px 300px 300px;
+  padding: 5px;
+  margin-left: 50px;
+  grid-gap: 3px;
+}
+
+.grid-item {
+  background-color: black;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  background-color: black;
+}
+
+.goal img {
+  height: 50px;
+  width: 50px;
+}
+.hcontent2 {
+  color: red;
+  letter-spacing: 2px;
+}
+.content2 {
+  font-size: 16px;
+  text-align: left;
+  color: #ececec;
+}
+
+/* grid end */
+.contact {
+  height: 550px;
+  width: 750px;
+  background-color: white;
+  margin-left: 400px;
+  margin-top: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: grid;
+}
+
+.contact-us {
+  font-size: 50px;
+  padding-top: 80px;
+  padding-left: 50px;
+  font-weight: 700;
+}
+
+.shift {
+  padding-left: 10px;
+}
+
+/* share icons */
+
+/* share end */
+.middle2 {
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  top: -50px;
+  left: 570px;
+  box-shadow: 15px 15px 5px #ccc;
+}
+/* BUTTON PREDICT &RESET */
+.two-btn {
+  font-family: "Playfair Display", serif;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid #0779e4;
+  color: #0779e4;
+  padding: 5px 20px;
+  border-radius: 2px;
+  transition: 0.2s linear;
+}
+.predict {
+  margin-right: 102px;
+}
+.reset {
+  padding: 5px 30px;
+}
+.two-btn:hover {
+  text-decoration: none;
+  background-color: #0779e4;
+  color: #fff;
+}
+
+.middle4 {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 250px;
+  left: -350px;
+  box-shadow: 15px 15px 5px #ccc;
+}
+.send {
+  margin-left: 307px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.social {
+  margin-top: 20px;
+  position: relative;
+  font-size: 8px;
+  text-align: center;
+}
+.social-icon:hover {
+  transition: all 0.3s linear;
+  transform: translateY(-10px);
+}
+#fab {
+  color: #07689f;
+  padding: 2%;
+}
+#twitter {
+  color: #00acee;
+  padding: 2%;
+}
+#insta {
+  color: #fb3958;
+  padding: 2%;
+}
