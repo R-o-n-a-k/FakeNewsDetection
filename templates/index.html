@@ -9,11 +9,7 @@
   <link rel=" icon" href="static/images/fake.png">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/d2747108de.js" crossorigin="anonymous"></script>
-  <script>
-    function myFunction() {
-      document.getElementById("GFG").submit();
-    }
-  </script>
+
 </head>
 
 <body style="background-image: url('../static/images/newspaper.jpg');">
@@ -103,26 +99,26 @@
       <h1 class="contact-us" id="link3">Contact Us</h1>
       <div class="shift">
         <div class="wrapper">
-          <form>
+          <form action="https://formspree.io/f/mzbyrqwa" method="POST">
             <div class="group">
-              <input type="text" placeholder="Email-Id" autocomplete="off" /><span class="highlight"></span><span
+              <input placeholder="Email-Id" autocomplete="off" type="email" name="_replyto" required
+                pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" /><span class="highlight"></span><span
                 class="bar"></span>
             </div>
-          </form>
-        </div>
-
-        <div class="wrapper">
-          <form>
             <div class="group">
-              <textarea type="text" placeholder="Content" autocomplete="off"></textarea><span
+              <textarea name="message" type="text" placeholder="Content" autocomplete="off"></textarea><span
                 class="highlight"></span><span class="bar"></span>
             </div>
+            <button type="submit" class="two-btn send"> Send</button>
           </form>
         </div>
         <img src="static/images/mid2.jpg" class="middle2">
         <img src="static/images/mid4.jpg" class="middle4">
-        <a href="#" class="two-btn send"> Send</a>
       </div>
+      <img src="static/images/mid2.jpg" class="middle2">
+      <img src="static/images/mid4.jpg" class="middle4">
+      <a href="#" class="two-btn send"> Send</a>
+
 
 
       <div class="social">
