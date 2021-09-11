@@ -345,7 +345,7 @@ h2 {
 .send {
   font-family: "Playfair Display", serif;
   background-color: #fff;
-  margin:10px 0 0 110px;
+  margin: 10px 0 0 110px;
 }
 .social {
   margin-top: 20px;
@@ -371,7 +371,7 @@ h2 {
 }
 
 /* ---SCROLL BUTTON--- */
-.scrollBtn {
+#myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -386,7 +386,7 @@ h2 {
   border-radius: 100px;
   font-size: 20px;
 }
-.scrollBtn:hover {
+#myBtn:hover {
   background-color: black;
   transition: 0.3s linear;
 }
