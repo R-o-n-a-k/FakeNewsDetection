@@ -371,7 +371,7 @@ h2 {
 }
 
 /* ---SCROLL BUTTON--- */
-#myBtn {
+.scrollBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -386,8 +386,7 @@ h2 {
   border-radius: 100px;
   font-size: 20px;
 }
-
-#myBtn:hover {
+.scrollBtn:hover {
   background-color: black;
   transition: 0.3s linear;
 }
