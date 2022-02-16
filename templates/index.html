@@ -50,8 +50,8 @@
       <div class="wrapper">
         <form id="form1" action="{{url_for('predicted')}}" method="POST">
           <div class="group">
-            <textarea type="text" placeholder="Paste text here..." name="news" autocomplete="off"></textarea><span
-              class="highlight"></span><span class="bar"></span>
+            <textarea type="text" placeholder="Paste text here..." name="news" autocomplete="off"
+              required></textarea><span class="highlight"></span><span class="bar"></span>
           </div>
           <button type="submit" class="two-btn predict">Predict</button>
           <button class="two-btn result" type="reset">Clear</button>
