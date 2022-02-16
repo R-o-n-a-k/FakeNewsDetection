@@ -10,7 +10,11 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/d2747108de.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="{{url_for('static',filename='js/index.js')}}"></script>
-
+  <script>
+    function myFunction() {
+      document.getElementById("clear").value = "";
+    }
+  </script>
 </head>
 
 <body style="background-image: url('../static/images/newspaper.jpg');">
@@ -54,10 +58,12 @@
               required></textarea><span class="highlight"></span><span class="bar"></span>
           </div>
           <button type="submit" class="two-btn predict">Predict</button>
-          <button class="two-btn result" type="reset">Clear</button>
+          <button type="button" class="two-btn result" onclick="myFunction()">Clear</button>
 
           <br>
-          {{prediction_text}}
+          <textarea style="resize: none; border: none;outline: none;" id="clear">{{prediction_text}}</textarea>
+
+
         </form>
 
       </div>
