@@ -19,6 +19,8 @@ def predicted():
 
     return render_template('index.html', prediction_text='The News is: {}'.format(output))
 
+def handler(request, response):
+    return app(request.environ, start_response=response)
 
 if __name__ == "__main__":
     app.run(debug=True)
